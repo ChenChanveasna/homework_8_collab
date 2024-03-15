@@ -1,11 +1,5 @@
 def replace_last(numbers):
-    empty = []
-    if len(numbers) <= 1:
-        return numbers
-    else:
-        empty.append(numbers[-1])
-        for i in range (0, len(numbers)-1):
-            empty.append(numbers[i])
-        return empty    
+
+    result = numbers[-1:] + numbers[:-1]
     
-print(replace_last([2, 3, 4, 1]))
+    return result
