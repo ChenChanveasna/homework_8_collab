@@ -8,7 +8,7 @@ class TestRemoveAllAfter(unittest.TestCase):
         self.assertEqual(remove_all_after([1, 2, 3, 4, 5], 6), [1, 2, 3, 4, 5])
         self.assertEqual(remove_all_after([], 1), [])
         self.assertEqual(remove_all_after([1], 1), [1])
-
+        self.assertEqualremove_all_after([1, 1, 2, 2, 3, 3], 2) == [1, 1, 2])
 
 if __name__ == '__main__':
     unittest.main()
