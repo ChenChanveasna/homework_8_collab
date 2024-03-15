@@ -8,7 +8,7 @@ class TestChunkingBy(unittest.TestCase):
         self.assertEqual(chunking_by([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 10), [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]])
         self.assertEqual(chunking_by([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 15), [[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]])
         self.assertEqual(chunking_by([], 5), [])
-        self.assertEqual( chunking_by([5, 4, 7, 3, 4, 5, 4], 3), [[5, 4, 7], [3, 4, 5], [4]])
+        self.assertEqual(chunking_by([5, 4, 7, 3, 4, 5, 4], 3), [[5, 4, 7], [3, 4, 5], [4]])
         self.assertEqual(chunking_by([3, 4, 5], 1), [[3], [4], [5]])
 
 
